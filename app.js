@@ -74,7 +74,7 @@
 // var favNum = 19;
 // var guessAge = parseInt(prompt('Can you correctly guess my age?'));
 //
-// for (i = 0; i < 4; i++){
+// for (var i = 0; i < 4; i++){
 //   if (guessAge == favNum){
 //     alert('Correct!');
 //     i = 4;
@@ -93,20 +93,22 @@
 
 // As a developer, I want to add a seventh question to my guessing game that accepts multiple possible correct answers that are stored in an array, for instance, "Can you guess a state that I have lived in besides Washington?"
 
-var guessHome = prompt('Can you guess a state that I have lived in besides Washington?');
-var correctHome = 'Illinois';
+var lguessHome = prompt('Can you guess a state that I have lived in besides Washington?');
+var guessHome = lguessHome.toLowerCase()
+var correctHome = ['illinois', 'michigan', 'arkansas', 'new york']
 
-guessHome = []
-
-for (i = 0; i < 5; i++){
-  if (guessHome == 'Illinois'){
+for (var i = 0; i < 5; i++){
+  if (guessHome == correctHome){
     alert('Correct!');
-    console.log(userName + 'guessed correctly');
+    i = 5
+    // console.log(userName + 'guessed correctly');
   }
-  else if (guessHome =! 'Illinois'){
+  else if (guessHome != correctHome){
     alert('Incorrect!')
-  console.log(userName + 'guessed incorrectly');
+    guessHome
+    // console.log(userName + 'guessed incorrectly');
   } else {
     alert('Please enter letters and not numbers');
+    // console.log(userName + 'did not guess with letters')
   }
 }
