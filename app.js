@@ -71,20 +71,42 @@
 
 // As a developer, I want to add a sixth question to my guessing game that takes numeric input, and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer. I will use the isNan() function to ensure that the user is providing valid numeric input.
 
-var favNum = 19;
-var guessAge = parseInt(prompt('Can you correctly guess my age?'));
-guessAge = [i];
+// var favNum = 19;
+// var guessAge = parseInt(prompt('Can you correctly guess my age?'));
+//
+// for (i = 0; i < 4; i++){
+//   if (guessAge == favNum){
+//     alert('Correct!');
+//     i = 4;
+//     console.log(userName + 'guess correctly');
+//   } else if (guessAge < favNum) {
+//     alert('Too low!');
+//     console.log(userName + 'guessed low');
+//   } else if (guessAge > favNum){
+//     alert('Too high!');
+//     console.log(userName + 'guessed high');
+//   } else {
+//     alert('Something went wrong')
+//     console.log(userName + 'something went unexplainably wrong here');
+//   }
+// };
 
-for (i = 0; i >= guessAge.length; i++){
-  if (guessAge == 19){
-    prompt('Correct!');
-    console.log(userName + 'guess correctly');
-  } else if (guessAge <= 19) {
-    prompt('Too low!');
-    console.log(userName + 'guessed low');
-  } else if (guessAge > 19){
-    prompt('Too high!');
+// As a developer, I want to add a seventh question to my guessing game that accepts multiple possible correct answers that are stored in an array, for instance, "Can you guess a state that I have lived in besides Washington?"
+
+var guessHome = prompt('Can you guess a state that I have lived in besides Washington?');
+var correctHome = 'Illinois';
+
+guessHome = []
+
+for (i = 0; i < 5; i++){
+  if (guessHome == 'Illinois'){
+    alert('Correct!');
+    console.log(userName + 'guessed correctly');
+  }
+  else if (guessHome =! 'Illinois'){
+    alert('Incorrect!')
+  console.log(userName + 'guessed incorrectly');
   } else {
-
+    alert('Please enter letters and not numbers');
   }
 }
