@@ -1,0 +1,24 @@
+/*As a developer, I want to use CSS to add some color to my About Me page, by changing the background color of the page to something besides white, then making all the header elements one color, the paragraph elements a different color, and lists yet a different color.
+As a prospective jobseeker, I want to use a tasteful color scheme that demonstrates my sensibility toward design plus provides readable contrast between the text and the background.*/
+
+/*
+background color of page
+all header elements
+paragraphs
+lists
+*/
+
+*{
+  background-color: grey;
+}
+#header {
+  color: blue;
+}
+
+.para {
+  color: red;
+}
+
+.lists{
+  color: yellow;
+}
