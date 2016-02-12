@@ -36,37 +36,40 @@ var userName = prompt('Before we begin, please enter your suedo name here.');
 // question2(sibling);
 
 
-function question3(education) {
-console.log(userName + " says" + education + " to clown school");
-low_education = education.toLowerCase();
-
-if (low_education == 'y' || low_education == 'yes'){
-  alert("I imagine that would be a lot of fun but your answer is incorrect")
-}
-else if (low_education == 'n' || low_education == 'no') {
-  alert("Correct!")
-}
-else {
-  alert ("Really, " + userName + "?")
-}
-}
-var education = prompt("I\'m currently going to clown school.");
-question3(education);
+// function question3(education) {
+// console.log(userName + " says" + education + " to clown school");
+// low_education = education.toLowerCase();
 //
-// var degree = prompt("I received my bachelors degree.");
-// console.log(userName + " says " + degree + " to the degree question");
-// low_degree = degree.toLowerCase();
-//
-// if (low_degree == 'y' || low_degree == 'yes'){
-//   alert("It took me 8 years but heck yes!");
+// if (low_education == 'y' || low_education == 'yes'){
+//   alert("I imagine that would be a lot of fun but your answer is incorrect")
 // }
-// else if (low_degree == 'n' || low_degree == 'no'){
-//   alert ("I did, in Business Management:)");
+// else if (low_education == 'n' || low_education == 'no') {
+//   alert("Correct!")
 // }
 // else {
-//     alert ("Check yo self before you wreck yo self!");
+//   alert ("Really, " + userName + "?")
 // }
+// }
+// var education = prompt("I\'m currently going to clown school.");
+// question3(education);
 //
+function question4(degree) {
+console.log(userName + " says " + degree + " to the degree question");
+low_degree = degree.toLowerCase();
+
+if (low_degree == 'y' || low_degree == 'yes'){
+  alert("It took me 8 years but heck yes!");
+}
+else if (low_degree == 'n' || low_degree == 'no'){
+  alert ("I did, in Business Management:)");
+}
+else {
+    alert ("Check yo self before you wreck yo self!");
+}
+}
+var degree = prompt("I received my bachelors degree.");
+question4(degree);
+
 // var cityBorn = prompt ("I was born in Chitown.");
 // console.log(userName + " says " + cityBorn + " to where I was born");
 // low_cityBorn = cityBorn.toLowerCase();
