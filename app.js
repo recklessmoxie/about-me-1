@@ -53,37 +53,39 @@ var userName = prompt('Before we begin, please enter your suedo name here.');
 // var education = prompt("I\'m currently going to clown school.");
 // question3(education);
 //
-function question4(degree) {
-console.log(userName + " says " + degree + " to the degree question");
-low_degree = degree.toLowerCase();
-
-if (low_degree == 'y' || low_degree == 'yes'){
-  alert("It took me 8 years but heck yes!");
-}
-else if (low_degree == 'n' || low_degree == 'no'){
-  alert ("I did, in Business Management:)");
-}
-else {
-    alert ("Check yo self before you wreck yo self!");
-}
-}
-var degree = prompt("I received my bachelors degree.");
-question4(degree);
-
-// var cityBorn = prompt ("I was born in Chitown.");
-// console.log(userName + " says " + cityBorn + " to where I was born");
-// low_cityBorn = cityBorn.toLowerCase();
+// function question4(degree) {
+// console.log(userName + " says " + degree + " to the degree question");
+// low_degree = degree.toLowerCase();
 //
-// if (low_cityBorn == 'y' || low_cityBorn == 'yes'){
-//   alert ("You are correct!")
+// if (low_degree == 'y' || low_degree == 'yes'){
+//   alert("It took me 8 years but heck yes!");
 // }
-// else if (low_cityBorn == 'n' || low_cityBorn == 'no'){
-//   alert ("You\'re correct however Chitown is also referred to as Chicago so you\'re wrong!")
+// else if (low_degree == 'n' || low_degree == 'no'){
+//   alert ("I did, in Business Management:)");
 // }
 // else {
-//   alert ("I'm calling the police! ")
+//     alert ("Check yo self before you wreck yo self!");
 // }
+// }
+// var degree = prompt("I received my bachelors degree.");
+// question4(degree);
 
+function question5(cityBorn) {
+console.log(userName + " says " + cityBorn + " to where I was born");
+low_cityBorn = cityBorn.toLowerCase();
+
+if (low_cityBorn == 'y' || low_cityBorn == 'yes'){
+  alert ("You are correct!")
+}
+else if (low_cityBorn == 'n' || low_cityBorn == 'no'){
+  alert ("You\'re correct however Chitown is also referred to as Chicago so you\'re wrong!")
+}
+else {
+  alert ("I'm calling the police! ")
+}
+}
+var cityBorn = prompt ("I was born in Chitown.");
+question5(cityBorn);
 // As a developer, I want to add a sixth question to my guessing game that takes numeric input, and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer. I will use the isNan() function to ensure that the user is providing valid numeric input.
 
 // var favNum = 19;
