@@ -1,20 +1,24 @@
-//
-// alert("Welcome! For the next 5 minutes I will be interrogating you with a series of yes or no questions about myself. Please enter 'y' for yes or 'n' for no. Thank You for playing!");
-//
-// var userName = prompt("Before we begin, please enter your suedo name here.");
-//
-// var originLocation = prompt("First round, " + userName + ". I live in Detroit, MI.");
-// console.log(userName + "\'s answer to where I live is, " + originLocation);
-// var low_originLocation = originLocation.toLowerCase();
-//
-// if (low_originLocation == 'y' || low_originLocation == 'yes'){
-//   alert("Incorrect, " + userName + ". That is false, you must not be paying attention.");
-// } else if (low_originLocation == 'n' || low_originLocation == 'no') {
-//   alert("Congratulations, " + userName + ", it seems as though you know where I live.");
-// } else {
-//   alert("Please enter either 'y' for yes or 'n' for no.");
-// }
-//
+
+alert('Welcome! For the next 5 minutes I will be interrogating you with a series of yes or no questions about myself. Please enter \'y\' for yes or \'n\' for no. Thank You for playing!');
+
+var userName = prompt('Before we begin, please enter your suedo name here.');
+
+
+function question1(low_originLocation) {
+  console.log(userName + "\'s answer to where I live is, " + originLocation);
+  var low_originLocation = originLocation.toLowerCase();
+
+  if (low_originLocation == 'y' || low_originLocation == 'yes'){
+    alert("Incorrect, " + userName + ". That is false, you must not be paying attention.");
+  } else if (low_originLocation == 'n' || low_originLocation == 'no') {
+    alert("Congratulations, " + userName + ", it seems as though you know where I live.");
+  } else {
+    alert("Please enter either 'y' for yes or 'n' for no.");
+  }
+}
+  var originLocation = prompt("First round, " + userName + ". I live in Detroit, MI.");
+  question1(low_originLocation);
+
 // var sibling = prompt ("Do I have a sister?");
 // console.log(userName + " thinks " + sibling + " that I have a sister");
 // low_sibling = sibling.toLowerCase();
@@ -93,22 +97,22 @@
 
 // As a developer, I want to add a seventh question to my guessing game that accepts multiple possible correct answers that are stored in an array, for instance, "Can you guess a state that I have lived in besides Washington?"
 
-var lguessHome = prompt('Can you guess a state that I have lived in besides Washington?');
-var guessHome = lguessHome.toLowerCase()
-var correctHome = ['illinois', 'michigan', 'arkansas', 'new york']
-
-for (var i = 0; i < 5; i++){
-  if (guessHome == correctHome){
-    alert('Correct!');
-    i = 5
-    // console.log(userName + 'guessed correctly');
-  }
-  else if (guessHome != correctHome){
-    alert('Incorrect!')
-    guessHome
-    // console.log(userName + 'guessed incorrectly');
-  } else {
-    alert('Please enter letters and not numbers');
-    // console.log(userName + 'did not guess with letters')
-  }
-}
+// var lguessHome = prompt('Can you guess a state that I have lived in besides Washington?');
+// var guessHome = lguessHome.toLowerCase()
+// var correctHome = ['illinois', 'michigan', 'arkansas', 'new york']
+//
+// for (var i = 0; i < 5; i++){
+//   if (guessHome == correctHome){
+//     alert('Correct!');
+//     i = 5
+//     // console.log(userName + 'guessed correctly');
+//   }
+//   else if (guessHome != correctHome){
+//     alert('Incorrect!')
+//     guessHome
+//     // console.log(userName + 'guessed incorrectly');
+//   } else {
+//     alert('Please enter letters and not numbers');
+//     // console.log(userName + 'did not guess with letters')
+//   }
+// }
