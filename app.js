@@ -1,4 +1,4 @@
-
+//
 alert('Welcome! For the next 5 minutes I will be interrogating you with a series of yes or no questions about myself. Please enter \'y\' for yes or \'n\' for no. Thank You for playing!');
 
 var userName = prompt('Before we begin, please enter your suedo name here.');
@@ -19,18 +19,21 @@ function question1(low_originLocation) {
   var originLocation = prompt("First round, " + userName + ". I live in Detroit, MI.");
   question1(low_originLocation);
 
-// var sibling = prompt ("Do I have a sister?");
-// console.log(userName + " thinks " + sibling + " that I have a sister");
-// low_sibling = sibling.toLowerCase();
-//
-// if (low_sibling == 'y' || low_sibling == 'yes'){
-//   alert("Although he is pretty girly at times, calling my brother my sister is considered incorrect.");
-// } else if (low_sibling == 'n' || low_sibling == 'no'){
-//   alert("You are paying attention.");
-// } else {
-//   alert("Cmmmon mannn");
-// }
-//
+
+function question2(sibling) {
+console.log(userName + " thinks " + sibling + " that I have a sister");
+low_sibling = sibling.toLowerCase();
+
+if (low_sibling == 'y' || low_sibling == 'yes'){
+  alert("Although he is pretty girly at times, calling my brother my sister is considered incorrect.");
+} else if (low_sibling == 'n' || low_sibling == 'no'){
+  alert("You are paying attention.");
+} else {
+  alert("Cmmmon mannn");
+}
+}
+var sibling = prompt ("Do I have a sister?");
+question2(sibling);
 // var education = prompt("I\'m currently going to clown school.");
 // console.log(userName + " says" + education + " to clown school");
 // low_education = education.toLowerCase();
